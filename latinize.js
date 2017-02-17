@@ -10,7 +10,10 @@
     root.latinize = factory();
   }
 })(this, function() {
-
+  function isLatin()
+  {
+    return this == this.latinise()
+  }
   function latinize(str) {
     if (typeof str === 'string') {
       return str.replace(/[^A-Za-z0-9]/g, function(x) {
